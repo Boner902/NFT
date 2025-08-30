@@ -75,7 +75,10 @@ ul li a {
     background: var(--call-to-action);
     transition: background 0.8s ease, transform 0.8s ease;
 }
-
+.btn:last-of-type {
+    width: 202px;
+    height: 60px;
+}
 
 .btn:hover {
     background: linear-gradient(135deg, #a259ff 0%, #9020c8 100%);
@@ -105,6 +108,158 @@ ul li a:hover {
 ul li a:hover::after {
     width: 100%;
 }
+
+.showcase_left_bottom {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+.showcase_left_upper h1  {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.showcase_left_upper p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+    padding: 30px 0;
+}
+.div1 h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.div1 p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+section {
+    background: var(--background);
+}
+.showcase_right_bottom_bottom p {
+    display: inline;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+}
+.showcase_right_bottom_bottom {
+    padding-top: 10px;
+}
+.showcase .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    width: 80%;
+}
+.showcase_right_bottom h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.showcase_right_bottom {
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    width: 510px;
+    height: 109px;
+    background: var(--background---secondary);
+}
+.parent_small {
+    display: flex;
+    gap: 15px;
+}
+.trend .container {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    width: 80%;
+    justify-content: space-between;
+}
+.parent_bottom h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+    padding-top: 20px;
+    
+}
+.parent_img p {
+    display: inline;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+    padding-bottom: 80px;
+}
+.parent_img {
+    padding-top: 10px;
+}
+.container2 {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.clone_img button {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--text);
+    border-radius: 20px;
+    padding: 32px 15px;
+    width: 100px;
+    height: 100px;
+    background: var(--call-to-action);
+    cursor: pointer;
+    transition: background 0.8s ease, transform 0.8s ease;
+}
+.clone_img button:hover {
+    background: linear-gradient(135deg, #a259ff 0%, #9020c8 100%);
+    transform: scale(1.05);
+}
+.trend .container2 h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+    display: block;
+    padding-top: 80px;
+}
+.trend .container2 p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+    display: block;
+}
 .input_box {
     display: flex;
     align-items: center;
@@ -132,11 +287,12 @@ ul li a:hover::after {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.8s ease;
+    transition: background 0.8s ease, transform 0.8s ease;
   }
   
   .input_box button:hover {
     background: linear-gradient(135deg, #a259ff, #6b50ff);
+    transform: scale(1.05);
   }
 
   .footer_upper {
@@ -201,5 +357,122 @@ ul li a:hover::after {
     line-height: 110%;
     color: #ccc;
     padding: 20px 0;
+  }
+  .header .container ul li:last-of-type {
+    display: none;
+  }
+  @media (max-width: 834px) {
+    .header .container ul li {
+        display: none;
+    }
+    .header .container ul li:last-of-type {
+        display: block;
+        cursor: pointer;
+    }
+    .showcase_left_upper h1 {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        text-transform: capitalize;
+        color: var(--text);
+    }
+    .showcase_left_upper p {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text);
+    }
+    .div1 h1 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        color: var(--text);
+    }
+    .div1 p {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text);
+    }
+    .parent:nth-last-of-type(1) {
+        display: none;
+    }
+    .showcase .container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    
+      .showcase_left {
+        max-width: 350px;
+        flex-shrink: 1;
+      }
+    
+      .showcase_right {
+        width: auto;
+        max-width: 330px;
+      }
+    
+      .abc {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    
+      .showcase_right_bottom {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .showcase_left_upper h1 {
+        font-size: 32px;
+        line-height: 120%;
+      }
+    
+      .showcase_left_upper p {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    
+      .showcase_left_bottom .div1 h1 {
+        font-size: 20px;
+      }
+    
+      .showcase_left_bottom .div1 p {
+        font-size: 14px;
+      }
+    
+      .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+        height: auto;
+        width: auto;
+      }
+      .trend .container {
+        gap: 30px;
+      }
+      .trend .container2 h1 {
+        font-size: 28px;
+      }
+      .trend .container2 p {
+        font-size: 16px;
+      }
+      .footer_upper .container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80%;
+      }
+      .footer_bottom .container {
+        width: 80%;
+      }
   }
   
