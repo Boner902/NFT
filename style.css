@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+:root {
+	--background: #2b2b2b;
+	--background---secondary: #3b3b3b;
+	--caption--label-text: #858584;
+	--text: #fff;
+	--call-to-action: #a259ff;
+	--blue-accent: #377df7;
+	--red-accent: #ff7262;
+}
+:root {
+    --font-family: "Space Mono", sans-serif;
+    --second-family: "Work Sans", sans-serif;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 80%;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+ul li a {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+}
+.header {
+    background: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 90%;
+}
+.btn {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+    border-radius: 20px;
+    padding: 0px 30px;
+    width: 152px;
+    height: 60px;
+    background: var(--call-to-action);
+    transition: background 0.8s ease, transform 0.8s ease;
+}
+
+
+.btn:hover {
+    background: linear-gradient(135deg, #a259ff 0%, #9020c8 100%);
+    transform: scale(1.05);
+}
+
+ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--call-to-action);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover {
+    color: var(--call-to-action);
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+.input_box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    width: fit-content;
+  }
+  
+  .input_box input {
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #000;
+  }
+  
+  .input_box button {
+    background: var(--call-to-action);
+    color: #fff;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.8s ease;
+  }
+  
+  .input_box button:hover {
+    background: linear-gradient(135deg, #a259ff, #6b50ff);
+  }
+
+  .footer_upper {
+    background: var(--background---secondary);
+  }
+
+  .footer_upper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    width: 75%;
+  }
+
+  .footer_upper .container ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .clone img {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .clone {
+    padding-top: 20px;
+  }
+
+  .footer_upper .container ul li {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ccc;
+  }
+
+  .footer_upper .container h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+  }
+
+
+  .footer_bottom .container {
+    border-top: 1px solid var(--caption--label-text);
+  }
+
+  .footer_bottom {
+    background: var(--background---secondary);
+    height: 73px;
+  }
+
+  .footer_bottom h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #ccc;
+    padding: 20px 0;
+  }
+  
